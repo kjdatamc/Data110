@@ -1,11 +1,11 @@
 # Author
 **Name:** Katherine Hatton\
-**Date:** 29 Jan 2025
+**Date:** 31 Jan 2025
 
 # Books! Books! Books!
 
 >The more that you read, the more things you will know. The more that you learn, the more places you'll go.  
->_I Can Read with My Eyes Shut!_ by Dr. Seuss
+>**_I Can Read with My Eyes Shut!_** by Dr. Seuss
 
 ## My 2025 TBR
 - [x] _High Conflict: Why We Get Trapped and How We Get Out_ by Amanda Ripley
@@ -19,9 +19,9 @@
 
 ## Book to Screen Adaptations I've Watched in the Past Year
 
-| Title | Type | Genre | Rating |
+| Title         | Type          | Genre         | Rating        |
 | ------------- | ------------- | ------------- | ------------- |
-| Origin | Film | Non-Fiction | :star: :star: :star: :star: :star: |
+| Origin | Film | Nonfiction | :star: :star: :star: :star: :star: |
 | Argylle | Film | Action | :star: :star: :star: |
 | Dune: Part Two | Film | Sci-Fi Drama | :star: :star: :star: |
 | Dead Boy Detectives | TV Series | Fantasy | :star: :star: :star: :star: |
@@ -38,21 +38,24 @@
 | The Night Agent | TV Series | Action | :star: :star: |
 
 > [!TIP]
-> To create a :star: in your markdown, use the code `:star:`
+> To create a :star: in your markdown, use the shortcode `:star:`\
+> Check out the [Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md "List of Emoji Shortcode") for more
 
 ### Sample Code Block
+To create and sort a list alphabetically:  
 ```python
-def greet(name):
-    return f"Hello, {name}!"
-
-print(greet("World"))
+Genres = ["Nonfiction", "Action", "Drama", "Fantasy", "Romance", "Crime"]
+Genres.sort()
+for Item in Genres:
+    print(Item, end=" ")
+print()
 ```
 
 ## My Top Book to Screen Adaptations I'm Looking Forward to This Year
-1. Reacher
-2. Murderbot
-3. Percy Jackson and the Olympians
-4. Wicked
+1. Sweet Magnolias
+2. Reacher
+3. Murderbot
+4. Percy Jackson and the Olympians
 5. Mickey17
 
 ## You Should Get a Library Card!
