@@ -1,4 +1,7 @@
 # Report
+>[Link to Slides NEED TO ADD LINK](https://slides.com/) \
+>[Link to GitHub Colab File NEED TO ADD LINK](https://colab.research.google.com/)
+
 ## Introduction
 ![Image of MSNBC COVID-19 Cases Heatmap TO ADD](https://github.com/kjdatamc/Data110/blob/8bee062268ca45d3006c8241cbf258c55d665bcc/Project1/placeholder.png)
 
@@ -119,7 +122,7 @@ A larger population, generally, will mean more chances for something to happen. 
 
 ![Image of Population Scatter Plots TO ADD](https://github.com/kjdatamc/Data110/blob/8bee062268ca45d3006c8241cbf258c55d665bcc/Project1/placeholder.png)
 
-On the left, in red, is a scatter plot of the expected deaths by state population, along with a line of regression. Given that expected deaths are calculated based on a benchmark deathrate and a state's population, it's unsurprising to see a very strong correlation - nearly perfectly aligned to the line of regression. There are a few slight outliers, such as one at around 20M population and just over 4K expected deaths. This is Florida, a known retirement destination and likely a state with a larger portion of the population that's older; so, it appears that the age of the population may also be a variable influencing the calculation of expected deaths.
+On the left, in red, is a scatter plot of the expected deaths by state population, along with a line of regression. Given that expected deaths are calculated based on a benchmark deathrate and a state's population, it's unsurprising to see a very strong correlation - nearly perfectly aligned to the line of regression. There are a few slight outliers, such as one at around 20M population and just over 4K expected deaths. This is Florida, a known retirement destination and likely a state with a larger portion of the population that's older. Sitting so far above the line of regression suggests that the age of the population could also a variable influencing the calculation of expected deaths.
 
 In the center, also in red, is a scatter plot of potentially excess deaths by state population, along with a line of regression. The correlation is weaker, but it is still visibly present. Population clearly influences this quantitative value, but it appears that other variables must also have significant influence.
 
@@ -143,11 +146,19 @@ In the center, in gold, is a line plot of the observed deaths from unintentional
 
 On the right, in blue, is a line plot that uses the ratio of observed deaths to the population of each age bin, plotting a death rate by age bin that gives us the best sense of how our risk of death by unintentional injury changes as we age. Here we see a much smaller decrease in risk through our 50s and 60s. Then in our early 70s, the death rate (and risk) begins increasing and continues increasing so it nearly triples between our late 60s and early 80s. This change in risk was invisible in the original line plot.
 
+### The Terrible, Horrible, No Good, Very Bad Data Visualization
+![Image of Bad Pie Chart TO ADD](https://github.com/kjdatamc/Data110/blob/8bee062268ca45d3006c8241cbf258c55d665bcc/Project1/placeholder.png)
+
+While a pie chart should normally be used to show the relative proportion of different categories that make up a whole, this data visualization is most certainly not doing that. It's the result of summing the percent potentially excess deaths across the cumulative age ranges for each cause of death. There's no reason to sum ratios that aren't portions of a whole. There's no reason to display ratios from within multiple categories in a pie chart, implying they're portions of a whole when they are *not*. The title doesn't help clarify, as it suggests the pie chart is showing the proportion of all potentially excess deaths that are from each cause of death. This is a bad data visualization on every level, and it would only confuse or mislead the audience.
+
 ## Conclusion
+
+### Key Findings
 Throughout my analysis, I explored the ways the same underlying dataset could be used to produce strikingly different data visualizations thanks to the influence of population on other quantitative values. When visualizing trends across different populations, the size of each population had a clear impact on absolute values from each population. For some questions, a rate would be the more appropriate quantitative value to use for analysis and data visualization.
 
-All of the visualizations I produced are *accurate* and have valid use-cases, but they could easily be misleading if the audience isn't able to understand the question each addresses *at a glance*. Small captions or paragraphs of explanation won't always effectively counter the first impression of a data visualization. That's why it's crucial to make sure your data visualization tells the honest, meaningful, and coherent story that you intend to communicate. Understand the context in which it will be viewed, and then select the appropriate data, visualization type, axes, and title to limit the chance of misinterpretation. And when looking at data visualizations made by others, consider whether they have done the same.
+All of the visualizations I produced are *accurate* and have valid use-cases (except the pie chart), but they could easily be misleading if the audience isn't able to understand the question each addresses *at a glance*. Small captions or paragraphs of explanation won't always effectively counter the first impression of a data visualization. That's why it's crucial to make sure your data visualization tells the honest, meaningful, and coherent story that you intend to communicate. Understand the context in which it will be viewed, and then select the appropriate data, visualization type, axes, and title to limit the chance of misinterpretation. And when looking at data visualizations made by others, consider whether they have done the same.
 
+### Further Investigation
 With this dataset, I was surprised to find it used cumulative age ranges rather than distinct (non-cumulative) age ranges. This approach could easily hide trends or minimize their apparent intensity. In my exploration of observed deaths due to unintentional injury, I found the hidden trend of increasing risk starting in one's 70s. That wasn't the focus of the dataset, but it makes one wonder what other trends may be concealed due to the choice of cumulative age ranges?
 
 Given that HHS Regions 4 and 6, along the southern half of the U.S., had the highest percent potentially excess deaths from stroke, it would be good to identify if there are similar regional trends for the other causes of death. I would also recommend creating a heatmap by state and potentially by locality type (metropolitan vs non) to determine if there are any trends that may be hidden by the somewhat artificially created HHS Regions.
