@@ -1,4 +1,4 @@
-# Report
+# Project 1 Report
 Katherine Hatton
 >[Link to Slides](https://slides.com/kjdatamc/project-1/) \
 >[Link to GitHub Colab File](https://github.com/kjdatamc/Data110/blob/c58660956d6ac3963ac42a9003e67ad2b11da14f/Project1/KHatton_project1_colab.ipynb)
