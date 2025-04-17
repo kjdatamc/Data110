@@ -57,12 +57,12 @@ I created a temperature gauge heatmap representing the weekly maximum temperatur
 Weather Underground offers the ability to view some weather data at the hourly level. When I did that for each of the days with 0&deg;F lows, I saw an apparent wind gust around the time that the temperature suddenly dropped to 0&deg;F. My interpretation is that a wind gust likely disabled the sensor and the 0&deg;F value should actually be a *null* value. On that assumption, I applied the lowest other recorded temperature for the days instead.
 
 <img
-        src="https://github.com/kjdatamc/Data110/blob/d4cb729a97d8303a5969a4d46919aca5b25554a6/Project1/placeholder.png" 
+        src="https://github.com/kjdatamc/Data110/blob/d079d42caf7472fcd3544a29fe442a51055c2030/ArtProject/img_wunderground_2025-01-22.png" 
         width=49%
         title="Image of January 22 Hourly Temp and Wind"
         alt="Image of January 227 Hourly Temp and Wind"
     />  &nbsp; <img
-        src="https://github.com/kjdatamc/Data110/blob/d4cb729a97d8303a5969a4d46919aca5b25554a6/Project1/placeholder.png" 
+        src="https://github.com/kjdatamc/Data110/blob/d079d42caf7472fcd3544a29fe442a51055c2030/ArtProject/img_wunderground_2025-03-27.png" 
         width=49%
         title="Image of March 27 Hourly Temp and Wind"
         alt="Image of March 27 Hourly Temp and Wind"
