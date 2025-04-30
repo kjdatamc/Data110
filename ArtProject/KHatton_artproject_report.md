@@ -1,8 +1,17 @@
 # Art Project Report
-## Summary
-Temperature blankets are knitting or crochet projects where different yarn colors are used to signify temperature ranges (called temperature gauges). I assigned colors to 10&deg; temperature gauges and applied them to Weather Underground data from the first quarter of 2025 for the Dulles Airport weather station. I chose to make a *temperature hat* with the stripes representing the weekly high and low temperatures and the pompoms representing the daily high and low temperatures.
+>[Link to GitHub Colab File](https://github.com/kjdatamc/Data110/blob/main/ArtProject/KHatton_artproject.ipynb)
 
-![Image of Hat](https://github.com/kjdatamc/Data110/blob/c8390bb6a3b4a40f05c7d8fd44c08954cdf987e2/ArtProject/img_yarncolors.png)
+## Summary
+Temperature blankets are knitting or crochet projects where different yarn colors are used to signify temperature ranges (called temperature gauges) over a specific period of time. I assigned colors to 10&deg; temperature gauges and applied them to Weather Underground data from the first quarter of 2025 for the Dulles Airport weather station. I chose to make a *temperature hat* with the stripes representing the weekly high and low temperatures and the pompoms representing the daily high and low temperatures.
+
+<p align="center">
+<img
+        src="https://github.com/kjdatamc/Data110/blob/main/ArtProject/img_hat.jpg" 
+        width=50%
+        title="Image of Hat"
+        alt="Image of Hat"
+    />
+</p>
 
 ## Introduction
 
@@ -43,12 +52,12 @@ def label_max_gauge(row):
 I created a temperature gauge heatmap representing the weekly maximum temperature and the weekly minimum temperature. These colors would be used for the stripes of the body of the hat. When I first made the heatmap, I was surprised to see the coldest temperature gauge in the last week of the quarter. While a 0&deg;F low in week 4 seemed plausible, one in week 13 seemed unlikely. So, I graphed the daily temperatures and found the two 0&deg;F temperatures: Jan 22, 2025 and Mar 27, 2025.
 
 <img
-        src="https://github.com/kjdatamc/Data110/blob/74b9dff8cdbd8687107ccb251455652968fb637a/ArtProject/img_stripeserror.png" 
+        src="https://github.com/kjdatamc/Data110/blob/main/ArtProject/img_stripeserror.png" 
         width=41.8%
-        title="Image of Erroneous Temperature Gauge Heatmap"
-        alt="Image of Erroneous Temperature Gauge Heatmap"
+        title="Image of Erroneous Weekly Temperature Gauge Heatmap"
+        alt="Image of Erroneous Weekly Temperature Gauge Heatmap"
     />  &nbsp; <img
-        src="https://github.com/kjdatamc/Data110/blob/74b9dff8cdbd8687107ccb251455652968fb637a/ArtProject/img_dailytemperror.png" 
+        src="https://github.com/kjdatamc/Data110/blob/main/ArtProject/img_dailytemperror.png" 
         width=56.2%
         title="Image of Erroneous Daily Temperatures Line Graph"
         alt="Image of Erroneous Daily Temperatures Line Graph"
@@ -57,12 +66,12 @@ I created a temperature gauge heatmap representing the weekly maximum temperatur
 Weather Underground offers the ability to view some weather data at the hourly level. When I did that for each of the days with 0&deg;F lows, I saw an apparent wind gust around the time that the temperature suddenly dropped to 0&deg;F. My interpretation is that a wind gust likely disabled the sensor and the 0&deg;F value should actually be a *null* value. On that assumption, I applied the lowest other recorded temperature for the days instead.
 
 <img
-        src="https://github.com/kjdatamc/Data110/blob/d079d42caf7472fcd3544a29fe442a51055c2030/ArtProject/img_wunderground_2025-01-22.png" 
+        src="https://github.com/kjdatamc/Data110/blob/main/ArtProject/img_wunderground_2025-01-22.png" 
         width=49%
         title="Image of January 22 Hourly Temp and Wind"
         alt="Image of January 227 Hourly Temp and Wind"
     />  &nbsp; <img
-        src="https://github.com/kjdatamc/Data110/blob/d079d42caf7472fcd3544a29fe442a51055c2030/ArtProject/img_wunderground_2025-03-27.png" 
+        src="https://github.com/kjdatamc/Data110/blob/main/ArtProject/img_wunderground_2025-03-27.png" 
         width=49%
         title="Image of March 27 Hourly Temp and Wind"
         alt="Image of March 27 Hourly Temp and Wind"
@@ -71,14 +80,34 @@ Weather Underground offers the ability to view some weather data at the hourly l
 ## Stripes
 With the corrected dataset, I created a new temperature gauge heatmap representing the weekly maximum and minimum temperatures to identify the colors for the stripes of the body of the hat. Interestingly, there wasn't a single temperature gauge that appeared in both the weekly max and min temperatures.
 
-![Image of Correct Temperature Gauge Heatmap](https://github.com/kjdatamc/Data110/blob/74b9dff8cdbd8687107ccb251455652968fb637a/ArtProject/img_stripescorrect.png)
+<p align="center">
+   <img
+        src="https://github.com/kjdatamc/Data110/blob/main/ArtProject/img_stripescorrect.png"
+        title="Image of Correct Weekly Temperature Gauge Heatmap"
+        alt="Image of Correct Weekly Temperature Gauge Heatmap"
+    />
+</p>
 
 ## Pompoms
 
 I created two bar graphs of the daily incidence of max and min temperatures in each temperature gauge. These would determine the proportion of colors used to make the pompoms. Unlike the weekly max/mins, the daily max and min temperatures have overlap of temperature gauges. The daily min temperatures have a more concentrated distribution compared to the max temperatures, which is to be expected based on the min temperature's lower standard deviation.
 
-![Image of Temperature Gauge Bar Graph](https://github.com/kjdatamc/Data110/blob/74b9dff8cdbd8687107ccb251455652968fb637a/ArtProject/img_pompoms.png)
+<p align="center">
+   <img
+        src="https://github.com/kjdatamc/Data110/blob/main/ArtProject/img_pompoms.png"
+        title="Image of Daily Temperature Gauge Bar Graph"
+        alt="Image of Daily Temperature Gauge Bar Graph"
+    />
+</p>
 
 ## The Hat
 And here's the final hat!
-![Image of Hat](https://github.com/kjdatamc/Data110/blob/c8390bb6a3b4a40f05c7d8fd44c08954cdf987e2/ArtProject/img_yarncolors.png)
+
+<p align="center">
+<img
+        src="https://github.com/kjdatamc/Data110/blob/main/ArtProject/img_hat.jpg" 
+        width=50%
+        title="Image of Hat"
+        alt="Image of Hat"
+    />
+</p>
