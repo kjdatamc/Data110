@@ -2,7 +2,7 @@
 >[Link to GitHub Colab File](https://github.com/kjdatamc/Data110/blob/main/ArtProject/KHatton_artproject.ipynb)
 
 ## Summary
-Temperature blankets are knitting or crochet projects where different yarn colors are used to signify temperature ranges (called temperature gauges) over a specific period of time. I assigned colors to 10&deg; temperature gauges and applied them to Weather Underground data from the first quarter of 2025 for the Dulles Airport weather station. I chose to make a *temperature hat* with the stripes representing the weekly high and low temperatures and the pompoms representing the daily high and low temperatures.
+Temperature blankets are knitting or crochet projects where different yarn colors are used to signify temperature ranges (called temperature gauges) over a specific period of time. I chose to make a *temperature hat* with the stripes representing the weekly high and low temperatures and the pompoms representing the daily high and low temperatures. I assigned colors to 10&deg; temperature gauges and applied them to Weather Underground data from the first quarter of 2025 for the Dulles Airport weather station.
 
 <p align="center">
 <img
